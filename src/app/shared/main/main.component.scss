@@ -1,0 +1,29 @@
+main {
+  display: flex;
+  justify-content: center;
+  margin: 15rem 0;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(/assets/totk.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5; // Cambia este valor según lo que necesites
+    z-index: -1;
+  }
+
+  .main-content {
+    max-width: 40rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  .lead {
+    font-size: 1.5rem;
+  }
+}
